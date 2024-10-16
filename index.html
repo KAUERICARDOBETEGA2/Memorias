@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memórias Escolares">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jornal e Almanaque de Kauê Betega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Memórias Escolares</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('gallery')">Imagens</a></li>
+            <li><a href="#" onclick="showSection('info')">Informações</a></li>
+            <li><a href="#" onclick="showSection('menu')">Menu</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container" id="content">
+
+    <!-- Seção Imagens -->
+    <section class="gallery" id="gallery">
+        <div class="photo-section">
+            <img src="belleTesta.jpg" alt="Belle em uma visão bem de perto">
+        </div>
+        <div class="photo-section">
+            <img src="LopesTesta.jpg" alt="Foto sem filtro">
+        </div>
+        <div class="photo-section">
+            <img src="Pés.jpg" alt="Viagem para a gruta">
+        </div>
+        <div class="photo-section">
+            <img src="soninho.jpg" alt="Aula da Luciana">
+        </div>
+        <div class="photo-section">
+            <img src="Tinkercad.jpeg" alt="Site do Tinkercad">
+        </div>
+        <div class="photo-section">
+            <img src="Vitão.jpg" alt="Vitão com calor">
+        </div>
+    </section>
+
+    <!-- Seção Informações -->
+    <section class="info" id="info" style="display: none;">
+        <div class="overlay">
+            <h2>Belle no Inverno</h2>
+            <p>O frio era de matar, e então chegou os monstros do frio. Aqui, vemos uma Belleastralopitecus em seu habitat natural.</p>
+        </div>
+        <div class="overlay">
+            <h2>ET Caminhante</h2>
+            <p>Aqui como podemos ver, temos um ET andando de forma bípede em uma sala de aula humana. Não se sabe seus planos.</p>
+        </div>
+        <div class="overlay">
+            <h2>Pés próximos a um lago</h2>
+            <p>Essa foto foi tirada próxima a um lago em uma viagem escolar.</p>
+        </div>
+        <div class="overlay">
+            <h2>Efeitos de uma Magia de sono Poderosa</h2>
+            <p>Aqui vemos uma humana deitada em sua mesa durante a aula da professora Luciana. Sua aula tem um efeito pré-estabelecido de que, a maioria das pessoas presentes acabam ficando com sono pelas próximas uma horas.</p>
+        </div>
+        <div class="overlay">
+            <h2>Hacker em Movimento</h2>
+            <p>Nesta imagem vemos um hacker produzindo uma arma de destruição global.</p>
+        </div>
+        <div class="overlay">
+            <h2>Novo tipo de monstro sendo registrado</h2>
+            <p>Nesta imagem, vemos nada mais nada menos que um novo tipo de criatura não identificada. Não se sabe ao certo seus costumes e vontades, mas é melhor tomarmos muito cuidado.</p>
+        </div>
+    </section>
+
+    <!-- Seção Menu -->
+    <section class="menu" id="menu" style="display: none;">
+        <div class="gallery">
+            <div class="photo-section">
+                <img src="belleTesta.jpg" alt="Belle em uma visão bem de perto" onclick="showInfo(1)" tabindex="0">
+                <div class="overlay">
+                    <h2>Belle no Inverno</h2>
+                    <p>O frio era de matar, e então chegou os monstros do frio. Aqui, vemos uma Belleastralopitecus em seu habitat natural.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="LopesTesta.jpg" alt="Foto sem filtro" onclick="showInfo(2)" tabindex="0">
+                <div class="overlay">
+                    <h2>ET Caminhante</h2>
+                    <p>Aqui como podemos ver, temos um ET andando de forma bípede em uma sala de aula humana. Não se sabe seus planos.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="Pés.jpg" alt="Viagem para a gruta" onclick="showInfo(3)" tabindex="0">
+                <div class="overlay">
+                    <h2>Pés próximos a um lago</h2>
+                    <p>Essa foto foi tirada próxima a um lago em uma viagem escolar.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="soninho.jpg" alt="Aula da Luciana" onclick="showInfo(4)" tabindex="0">
+                <div class="overlay">
+                    <h2>Efeitos de uma Magia de sono Poderosa</h2>
+                    <p>Aqui vemos uma humana deitada em sua mesa durante a aula da professora Luciana. Sua aula tem um efeito pré-estabelecido de que, a maioria das pessoas presentes acabam ficando com sono pelas próximas uma horas.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="Tinkercad.jpeg" alt="Site do Tinkercad" onclick="showInfo(5)" tabindex="0">
+                <div class="overlay">
+                    <h2>Hacker em Movimento</h2>
+                    <p>Nesta imagem vemos um hacker produzindo uma arma de destruição global.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="Vitão.jpg" alt="Vitão com calor" onclick="showInfo(6)" tabindex="0">
+                <div class="overlay">
+                    <h2>Novo tipo de monstro sendo registrado</h2>
+                    <p>Nesta imagem, vemos nada mais nada menos que um novo tipo de criatura não identificada. Não se sabe ao certo seus costumes e vontades, mas é melhor tomarmos muito cuidado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Kauê Betega - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
